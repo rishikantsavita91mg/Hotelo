@@ -1,0 +1,35 @@
+@mixin fontProperties($font-size,$font-weight,$font-family,$line-height, $color){
+font-size: $font-size;
+font-weight: $font-weight;
+font-family: $font-family;
+line-height: $line-height;
+color: $color;
+}
+
+@mixin buttonProperties($text-decoration,$border,$display,$color,$transition){
+    text-decoration: $text-decoration;
+    border: $border;
+    display: $display;
+    color: $color;
+    transition: $transition;
+}
+
+@mixin img-boxProperties($width,$height,$overflow){
+    width: $width;
+    height: $height;
+    overflow: $overflow;
+}
+@mixin imgProperties($width,$height,$object-fit,$object-position, $transfonter){
+    width: $width;
+    height: $height;
+    object-fit:$object-fit;
+    object-position: $object-position;
+    transition: $transfonter;
+}
+
+@mixin displayProperties($display,$align-items,$justify-content,$flex-wrap){
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-wrap: $flex-wrap;
+}

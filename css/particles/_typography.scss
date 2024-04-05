@@ -1,0 +1,85 @@
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+p:last-child{
+    margin-bottom:0;
+}
+
+img {
+    display: block;
+}
+
+.img-box {
+    @include img-boxProperties(100%, 100%, hidden)
+}
+
+img {
+    @include imgProperties(100%, 100%, cover, center, all ease 0.5s)
+}
+
+a,
+button {
+    @include buttonProperties(none, 0, inline-block, $primary, all ease 0.5s)
+}
+
+h1{
+    @include fontProperties($x-large,$font-semibold, $font-family,80px,$black)
+}
+h2{
+    @include fontProperties($large,$font-semibold,$font-family,60px, $dark-black)
+}
+h3{
+    @include fontProperties($medium,$font-semibold,$font-family, 40px,$dark-black)
+}
+h4{
+    @include fontProperties($x-medium, $font-semibold, $font-family, 28px, $dark-black )
+}
+h5{
+    @include fontProperties($x-small,$font-semibold,$font-family,30px,$dark-black)
+}
+h6{
+    @include fontProperties($small-x,$font-reguler, $font-family,18px,$primary)
+}
+p{
+    @include fontProperties($small, $font-reguler, $font-family,28px,$gray)
+}
+.dark{color: $gray;}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:$primary;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:rgb(247, 238, 238);
+    border-radius: 5px;
+}

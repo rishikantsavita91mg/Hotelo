@@ -1,0 +1,137 @@
+#hyatt {
+    width: 100%;
+    background: $white;
+    margin-bottom: 100px;
+    @media screen and (max-width:1199px) {
+       margin-bottom: 80px;
+      }
+
+    .hyatt-main {
+        width: 1080px;
+        column-gap: 120px;
+        margin: 0 auto;
+        
+        @media screen and (max-width:1199px) {
+            max-width: 100%;
+         }
+
+        .hyatt-img {
+            width: 20%;
+
+            img {
+                max-width: 120px;
+            }
+        }
+    }
+
+    .map {
+        margin-top: 100px;
+        position: relative;
+        @media screen and (max-width:1199px) {
+            margin-top: 60px;
+          }
+
+        iframe {
+            width: 100%;
+            height: 677px;
+            border-radius: 16px;
+        }
+
+        .lucation-main {
+            width: 100%;
+            max-width: 1194px;
+            border-radius: 16px;
+            background: $white;
+            padding: 44px 66px;
+            position: absolute;
+            bottom: 114px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @media screen and (max-width:1399px) {
+                max-width: 1130px;
+                padding: 35px 40px;
+            }
+            @media screen and (max-width:1199px) {
+                max-width: 920px;
+                padding: 29px;
+              }
+
+
+            .lucation-content {
+                width: 50%;
+
+                h2 {
+                    padding-bottom: 16px;
+
+                    @media screen and (max-width:1199px) {
+                      font-size: 33px;
+                      padding-bottom: 5px;
+                      }
+                }
+                p{
+                    @media screen and (max-width:1199px) {
+                       font-size: 15px;
+                       line-height: 25px;
+                      }
+                }
+
+            }
+
+            .lucation-form {
+                width: auto;
+                justify-content: end;
+                display: flex;
+                flex-direction: column-reverse;
+
+                form {
+                    width: 436px;
+                    background: $secondary;
+                    border-radius: 50px;
+                    display: flex;
+
+                    @media screen and (max-width:1399px) {
+                        width: 400px;
+                    }
+
+                    @media screen and (max-width:1199px) {
+                      width: 385px;
+                      }
+
+                    input {
+                        width: 75%;
+                        border: none;
+                        outline: none;
+                        background: $secondary;
+                        border-radius: 50px;
+                        font-size: 14px;
+                        line-height: 28px;
+                        font-weight: $font-reguler;
+                        font-family: $font-family;
+                        padding: 14px 0px 14px 24px;
+
+                        @media screen and (max-width:1199px) {
+                       font-size: 14px;
+                       line-height: 20px;
+
+                          }
+                    }
+
+                    button {
+                        font-size: 16px;
+                        font-weight: $font-semibold;
+                        font-family: $font-family;
+                        background: $primary;
+                        border-radius: 50px;
+                        padding: 16px 32px;
+                        color: $white;
+                        @media screen and (max-width:1199px) {
+                         font-size: 14px;
+                         padding: 12px 29px;
+                          }
+                    }
+                }
+            }
+        }
+    }
+}

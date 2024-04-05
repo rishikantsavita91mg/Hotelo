@@ -1,0 +1,124 @@
+#header {
+    width: 100%;
+    background: $white;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    transition: all ease 0.5s;
+
+    @media screen and (max-width:1399px) {
+        padding: 30px 0;
+    }
+
+    .header-main {
+        width: 100%;
+
+        .logo {
+            width: auto;
+        }
+
+        .nav {
+            ul {
+                column-gap: 40px;
+
+                li {
+                    a {
+                        font-size: $small;
+                        font-weight: $font-reguler;
+                        line-height: 24px;
+                        color: $dark-black;
+                        position: relative;
+
+                      
+                      
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 0;
+                            height: 3px;
+                            background-color: $primary;
+                            transition: all ease 0.5s;
+                        }
+
+                        &:hover {
+                            color: $primary;
+                            transition: all ease 0.5s;
+
+                            &::before {
+                                width: 100%;
+                                transition: all ease 0.5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-btn {
+            width: auto;
+
+            .btn {
+                font-size: $small;
+                font-weight: $font-reguler;
+                line-height: 20px;
+                font-family: $font-family;
+                color: $white;
+                background: $primary;
+                border-radius: 35px;
+                padding: 10px 20px;
+                border: 1px solid $primary;
+
+                &:hover {
+                    background: transparent;
+                    transition: all ease 0.5s;
+                    color: $black;
+                }
+            }
+        }
+
+    }
+    .progressbar {
+        width: 100%;
+        height: 4px;
+        z-index: 9;
+        transition: all .6s ease;
+        background: #f1f1f1;
+        position: fixed;
+        top: 125px;
+        left: 0;
+        
+    @media screen and (max-width:1399px) {
+      top: 103px;
+    }
+
+
+        span {
+            background: $primary;
+            height: 100%;
+            display: inline-block;
+            position: absolute;
+            left:0;
+            top: 0;
+        }
+    }
+
+}
+
+.fixed-header {
+    #header {
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.23);
+        transition: all ease 0.5s;
+        padding: 20px 0;
+        .progressbar{
+            top: 85px;
+            transition: all ease 0.5s;
+        }
+    }
+}
+
+   
+
+

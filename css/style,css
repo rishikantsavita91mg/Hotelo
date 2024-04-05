@@ -1,0 +1,475 @@
+/*-----------color---------*/
+/*--------------font-size------*/
+/*--------------font-weight------*/
+/*---------font-family------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: normal;
+  font-weight: 500;
+  color: #000;
+  background: #fff;
+  text-decoration: none;
+  padding-top: 125px;
+  transition: all ease 0.5s;
+  z-index: 11;
+}
+
+.container {
+  width: 100%;
+  max-width: 1310px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Medium.woff2") format("woff2"), url("../fonts/OpenSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+.img-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease 0.5s;
+}
+
+a,
+button {
+  text-decoration: none;
+  border: 0;
+  display: inline-block;
+  color: #24ab70;
+  transition: all ease 0.5s;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  line-height: 80px;
+  color: #000;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  line-height: 60px;
+  color: #222222;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  line-height: 40px;
+  color: #222222;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  line-height: 28px;
+  color: #222222;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  line-height: 30px;
+  color: #222222;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  line-height: 18px;
+  color: #24ab70;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  line-height: 28px;
+  color: #555555;
+}
+
+.dark {
+  color: #555555;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #24ab70;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 5px;
+}
+
+#header {
+  width: 100%;
+  background: white;
+  padding: 40px 0;
+  position: fixed;
+  top: 0;
+}
+#header .header-main {
+  width: 100%;
+}
+#header .header-main .logo {
+  width: auto;
+}
+#header .header-main .nav ul {
+  column-gap: 40px;
+}
+#header .header-main .nav ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+  position: relative;
+}
+#header .header-main .nav ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #24ab70;
+  transition: all ease 0.5s;
+}
+#header .header-main .nav ul li a:hover {
+  color: #24ab70;
+  transition: all ease 0.5s;
+}
+#header .header-main .nav ul li a:hover::before {
+  width: 100%;
+  transition: all ease 0.5s;
+}
+#header .header-main .header-btn {
+  width: auto;
+}
+#header .header-main .header-btn .btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Open Sans";
+  color: white;
+  background: #24ab70;
+  border-radius: 35px;
+  padding: 10px 20px;
+  border: 1px solid #24ab70;
+}
+#header .header-main .header-btn .btn:hover {
+  background: transparent;
+  transition: all ease 0.5s;
+  color: #000;
+}
+
+#banner {
+  width: 100%;
+  background: white;
+  margin-bottom: 120px;
+}
+#banner .banner-main {
+  width: 100%;
+  background: #f4fbf8;
+  border-radius: 40px 40px 0px 0px;
+}
+#banner .banner-main .banner-content {
+  padding: 88px 0 0 60px;
+  width: 50%;
+}
+#banner .banner-main .banner-content p {
+  padding-top: 30px;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+#banner .banner-main .banner-content ul {
+  column-gap: 24px;
+}
+#banner .banner-main .banner-content ul li a {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner .banner-main .banner-content ul li a i {
+  color: #24ab70;
+  font-size: 20px;
+}
+#banner .banner-main .banner-img img {
+  max-width: 640px;
+}
+
+#hotels {
+  width: 100%;
+  background: white;
+  margin-bottom: 147px;
+}
+#hotels .hotels-main {
+  width: 100%;
+}
+#hotels .hotels-main .hotels-blog {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#hotels .hotels-main .hotels-blog .hotels-contant {
+  width: 70%;
+}
+#hotels .hotels-main .hotels-blog .hotels-contant p {
+  max-width: 54%;
+}
+#hotels .hotels-main .hotels-blog .hotels-btn {
+  width: auto;
+  justify-content: end;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#hotels .hotels-main .hotels-blog .hotels-btn .btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: "Open Sans";
+  color: #24ab70;
+  padding: 6px 25px;
+  background: #f4fbf8;
+  border-radius: 280px;
+  border: 2px solid #f4fbf8;
+}
+#hotels .hotels-main .hotels-blog .hotels-btn .btn:hover {
+  background: transparent;
+  transition: all ease 0.5s;
+  border: 2px solid #24ab70;
+}
+#hotels .hotels-main .hotels-card-main {
+  column-gap: 23px;
+}
+#hotels .hotels-main .hotels-card-main .hotels-card {
+  width: calc(33.33% - 15.33px);
+  background: #f4fbf8;
+  border-radius: 16px;
+  overflow: hidden;
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-img img {
+  transition: all ease 0.5s;
+  transform: scale(1);
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-img img:hover {
+  transition: all ease 0.5s;
+  transform: scale(1.2);
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-content {
+  padding: 24px 57px 38px 16px;
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-content h6 {
+  padding-bottom: 8px;
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-content h4 {
+  padding-bottom: 24px;
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-content .park {
+  column-gap: 60px;
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-content .park h6 {
+  font-size: 16px;
+  color: #222222;
+  padding-bottom: 0;
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-content .park ul li {
+  padding-right: 6px;
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-content .park ul li i {
+  color: #f95f5f;
+}
+#hotels .hotels-main .hotels-card-main .hotels-card .hotels-content .park ul li span {
+  padding-left: 6px;
+}
+
+#provide {
+  width: 100%;
+  background: white;
+  margin-bottom: 120px;
+}
+#provide .provide-main {
+  width: 100%;
+  column-gap: 24px;
+}
+#provide .provide-main .provide-content {
+  width: 33%;
+}
+#provide .provide-main .provide-content h2 {
+  padding-bottom: 30px;
+}
+#provide .provide-main .provide-content p {
+  padding-bottom: 50px;
+}
+#provide .provide-main .provide-content a {
+  font-weight: 600;
+  color: white;
+  background: #24ab70;
+  border-radius: 35px;
+  padding: 12px 32px;
+  line-height: 24px;
+}
+#provide .provide-main .provide-box-blog {
+  width: 67%;
+  gap: 24px;
+}
+#provide .provide-main .provide-box-blog .provide-box {
+  width: calc(25% - 18px);
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 8px;
+  padding: 51px 20px 50px 27px;
+}
+#provide .provide-main .provide-box-blog .provide-box:hover {
+  transition: all ease 0.5s;
+  box-shadow: 0px 23px 30px 0 rgba(0, 29, 16, 0.05);
+}
+#provide .provide-main .provide-box-blog .provide-box .provide-icon img {
+  object-fit: scale-down;
+  width: auto;
+  padding-bottom: 24px;
+}
+#provide .provide-main .provide-box-blog .provide-box h6 {
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+#discover {
+  width: 100%;
+  background: white;
+}
+#discover .discover-main {
+  width: 100%;
+  background: #f4fbf8;
+}
+#discover .discover-main .discover-img {
+  width: 50%;
+}
+#discover .discover-main .discover-content {
+  width: 50%;
+  padding: 76px 70px 76px 70px;
+}
+#discover .discover-main .discover-content h2 {
+  padding-bottom: 20px;
+}
+#discover .discover-main .discover-content p {
+  margin-bottom: 24px;
+}
+#discover .discover-main .discover-content p:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style,css.map */

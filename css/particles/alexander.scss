@@ -1,0 +1,92 @@
+#alexander {
+    width: 100%;
+    margin-bottom: 100px;
+    @media screen and (max-width:1399px) {
+       margin-bottom: 90px;
+    }
+    @media screen and (max-width:1199px) {
+       margin-bottom: 80px;
+      }
+
+    .alexander-main {
+        width: 100%;
+        background: $secondary;
+        border-radius: 16px;
+        overflow: hidden;
+
+        .hh {
+           display: flex;
+            .alexander-content {
+                width: 65%;
+                padding: 65px 105px 67px 77px;
+                @media screen and (max-width:1199px) {
+                   padding: 40px 55px 40px 47px;
+                  }
+
+                P {
+                    margin-bottom: 57px;
+                    position: relative;
+                    @media screen and (max-width:1199px) {
+                        margin-bottom: 31px;
+                      }
+
+                  
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        right:0;
+                        display: inline-block;
+                        font-size: 30px;
+                        width: 25px;
+                        height: 25px;
+                        background: url(../images/vector-2.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+
+                        @media screen and (max-width:1399px) {
+                           right: 0;
+                           bottom: -7px;
+                        }
+                        @media screen and (max-width:1199px) {
+                           right: 0;
+                           bottom: -7px;
+                        }
+
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        left: -33px;
+                        font-size: 30px;
+                        width: 25px;
+                        height: 25px;
+                        background: url(../images/vector.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                }
+
+                h4 {
+                    margin-bottom: 12px;
+                    @media screen and (max-width:1199px) {
+                      margin-bottom: 4px;
+                      }
+                }
+
+                h6 {
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $black;
+                }
+            }
+
+            .alexander-img-blog {
+                width: 35%;
+            }
+        }
+
+    }
+}
