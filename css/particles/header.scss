@@ -76,6 +76,13 @@
                     transition: all ease 0.5s;
                     color: $black;
                 }
+
+
+                @media screen and (max-width: $sm) {
+                    display: none;
+                    padding: 0;
+                }
+
             }
         }
 
@@ -118,7 +125,3 @@
         }
     }
 }
-
-   
-
-
