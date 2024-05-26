@@ -269,7 +269,7 @@ p {
   width: 100%;
   transition: all ease 0.5s;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   #header .header-main .nav ul {
     display: none;
   }
@@ -293,7 +293,7 @@ p {
   transition: all ease 0.5s;
   color: #000;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   #header .header-main .header-btn .btn {
     display: none;
   }
@@ -313,6 +313,11 @@ p {
     top: 103px;
   }
 }
+@media screen and (max-width: 767px) {
+  #header .progressbar {
+    top: 96px;
+  }
+}
 #header .progressbar span {
   background: #24ab70;
   height: 100%;
@@ -330,6 +335,11 @@ p {
 .fixed-header #header .progressbar {
   top: 85px;
   transition: all ease 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .fixed-header #header .progressbar {
+    top: 78px;
+  }
 }
 
 #banner {
@@ -383,6 +393,11 @@ p {
   #banner .banner-main .chack-out-main {
     width: 740px;
     bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #banner .banner-main .chack-out-main {
+    display: none;
   }
 }
 #banner .banner-main .chack-out-main .chack-box {
@@ -575,6 +590,12 @@ p {
     line-height: 52px;
   }
 }
+@media screen and (max-width: 767px) {
+  #hotels .hotels-main .hotels-blog .hotels-contant h2 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+}
 #hotels .hotels-main .hotels-blog .hotels-contant p {
   max-width: 54%;
 }
@@ -612,6 +633,12 @@ p {
   #hotels .hotels-main .hotels-card-main {
     flex-wrap: wrap;
     gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #hotels .hotels-main .hotels-card-main {
+    align-items: flex-start;
+    justify-content: center;
   }
 }
 #hotels .hotels-main .hotels-card-main .hotels-card {
@@ -749,6 +776,11 @@ p {
     padding: 24px 15px 30px 15px;
   }
 }
+@media screen and (max-width: 767px) {
+  #hotels .hotels-main .hotels-card-main .hotels-card .hotels-text {
+    padding: 20px 12px 27px 12px;
+  }
+}
 #hotels .hotels-main .hotels-card-main .hotels-card .hotels-text h6 {
   padding-bottom: 8px;
 }
@@ -760,6 +792,12 @@ p {
     font-size: 23px;
   }
 }
+@media screen and (max-width: 767px) {
+  #hotels .hotels-main .hotels-card-main .hotels-card h4 {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+}
 #hotels .hotels-main .hotels-card-main .hotels-card .park {
   column-gap: 60px;
 }
@@ -768,13 +806,28 @@ p {
     justify-content: space-between;
   }
 }
+@media screen and (max-width: 767px) {
+  #hotels .hotels-main .hotels-card-main .hotels-card .park {
+    column-gap: 20px;
+  }
+}
 #hotels .hotels-main .hotels-card-main .hotels-card .park h6 {
   font-size: 16px;
   color: #222222;
   padding-bottom: 0;
 }
+@media screen and (max-width: 767px) {
+  #hotels .hotels-main .hotels-card-main .hotels-card .park h6 {
+    font-size: 15px;
+  }
+}
 #hotels .hotels-main .hotels-card-main .hotels-card .park ul li {
   padding-right: 6px;
+}
+@media screen and (max-width: 767px) {
+  #hotels .hotels-main .hotels-card-main .hotels-card .park ul li {
+    padding-right: 1px;
+  }
 }
 #hotels .hotels-main .hotels-card-main .hotels-card .park ul li i {
   color: #f95f5f;
@@ -838,6 +891,13 @@ p {
     padding-bottom: 12px;
   }
 }
+@media screen and (max-width: 767px) {
+  #provide .provide-main .provide-content h2 {
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 8px;
+  }
+}
 #provide .provide-main .provide-content p {
   padding-bottom: 50px;
 }
@@ -845,6 +905,13 @@ p {
   #provide .provide-main .provide-content p {
     max-width: 70%;
     padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #provide .provide-main .provide-content p {
+    max-width: 90%;
+    padding-bottom: 18px;
+    font-size: 15px;
   }
 }
 #provide .provide-main .provide-content a {
@@ -866,6 +933,12 @@ p {
   #provide .provide-main .provide-content a {
     padding: 10px 28px;
     line-height: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #provide .provide-main .provide-content a {
+    padding: 8px 24px;
+    line-height: 20px;
   }
 }
 #provide .provide-main .provide-box-blog {
@@ -936,8 +1009,19 @@ p {
   background: #f4fbf8;
   border-radius: 16px;
 }
+@media screen and (max-width: 767px) {
+  #discover .discover-main {
+    flex-wrap: wrap;
+  }
+}
 #discover .discover-main .discover-img {
   width: 50%;
+}
+@media screen and (max-width: 767px) {
+  #discover .discover-main .discover-img {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 #discover .discover-main .discover-content {
   width: 50%;
@@ -951,6 +1035,11 @@ p {
 @media screen and (max-width: 991px) {
   #discover .discover-main .discover-content {
     padding: 22px 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #discover .discover-main .discover-content {
+    width: 100%;
   }
 }
 #discover .discover-main .discover-content h2 {
@@ -1035,6 +1124,13 @@ p {
 #alexander .alexander-main .hh {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  #alexander .alexander-main .hh {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
 #alexander .alexander-main .hh .alexander-content {
   width: 65%;
   padding: 65px 105px 67px 77px;
@@ -1042,6 +1138,11 @@ p {
 @media screen and (max-width: 1199px) {
   #alexander .alexander-main .hh .alexander-content {
     padding: 40px 55px 40px 47px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #alexander .alexander-main .hh .alexander-content {
+    width: 100%;
   }
 }
 #alexander .alexander-main .hh .alexander-content P {
@@ -1105,6 +1206,12 @@ p {
 }
 #alexander .alexander-main .hh .alexander-img-blog {
   width: 35%;
+}
+@media screen and (max-width: 767px) {
+  #alexander .alexander-main .hh .alexander-img-blog {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 #hyatt {

@@ -23,12 +23,22 @@
         .hh {
             display: flex;
 
+            @media screen and (max-width: $md) {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;           
+            }
+
             .alexander-content {
                 width: 65%;
                 padding: 65px 105px 67px 77px;
 
                 @media screen and (max-width:1199px) {
                     padding: 40px 55px 40px 47px;
+                }
+
+                @media screen and (max-width: $md) {
+                    width: 100%;       
                 }
 
                 P {
@@ -97,6 +107,11 @@
 
             .alexander-img-blog {
                 width: 35%;
+
+                @media screen and (max-width: $md) {
+                    width: 80%;
+                    margin: 0 auto;       
+                }
             }
         }
 

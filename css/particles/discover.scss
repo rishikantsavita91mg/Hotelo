@@ -20,8 +20,17 @@
         background: $secondary;
         border-radius: 16px;
 
+        @media screen and (max-width: $md) {
+            flex-wrap: wrap;               
+        }
+
         .discover-img {
             width: 50%;
+
+            @media screen and (max-width: $md) {
+                width: 80%;
+                margin: 0 auto;           
+            }
         }
 
         .discover-content {
@@ -34,6 +43,10 @@
 
             @media screen and (max-width:$lg) {
                 padding: 22px 28px;
+            }
+
+            @media screen and (max-width: $md) {
+                width: 100%;           
             }
 
             h2 {

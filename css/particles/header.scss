@@ -55,7 +55,7 @@
                     }
                 }
 
-                @media screen and (max-width: $sm) {
+                @media screen and (max-width: $md) {
                     display: none;
                 }
 
@@ -83,7 +83,7 @@
                     color: $black;
                 }
 
-                @media screen and (max-width: $sm) {
+                @media screen and (max-width: $md) {
                     display: none;
                 }
 
@@ -103,6 +103,10 @@
         
     @media screen and (max-width:1399px) {
       top: 103px;
+    }
+
+    @media screen and (max-width:$md) {
+        top: 96px;
     }
 
 
@@ -126,6 +130,10 @@
         .progressbar{
             top: 85px;
             transition: all ease 0.5s;
+
+            @media screen and (max-width:$md) {
+                top: 78px;
+            }
         }
     }
 }

@@ -30,6 +30,11 @@
                         font-size: 36px;
                         line-height: 52px;
                     }
+
+                    @media screen and (max-width: $md) {
+                        font-size: 30px;
+                        line-height: 48px;
+                    }
                 }
 
                 p {
@@ -72,9 +77,14 @@
             column-gap: 23px;
             @media screen and (max-width:1199px) {
                 flex-wrap: wrap;
-                gap: 20px;
-              
+                gap: 20px; 
             }
+
+            @media screen and (max-width: $md) {
+                align-items: flex-start;       
+                justify-content: center;
+            }
+
             .hotels-card {
                 width: calc(33.33% - 15.33px);
                 background: $secondary;
@@ -84,6 +94,7 @@
                 @media screen and (max-width:1199px) {
                     width:calc(50% - 10px);
                 }
+
                 .hotels-img {
                     position: relative;
 
@@ -231,6 +242,10 @@
                        padding: 24px 15px 30px 15px;
                     }
 
+                    @media screen and (max-width: $md) {
+                        padding: 20px 12px 27px 12px;   
+                    }
+
                     h6 {
                         padding-bottom: 8px;
                     }
@@ -243,6 +258,11 @@
                     @media screen and (max-width:1399px) {
                         font-size: 23px;
                     }
+
+                    @media screen and (max-width: $md) {
+                        font-size: 16px;   
+                        padding-bottom: 16px;
+                    }
                 }
 
                 .park {
@@ -251,15 +271,27 @@
                        justify-content: space-between;
                     }
 
+                    @media screen and (max-width: $md) {
+                        column-gap: 20px;   
+                    }
+
                     h6 {
                         font-size: 16px;
                         color: $dark-black;
                         padding-bottom: 0;
+
+                        @media screen and (max-width: $md) {
+                            font-size: 15px;
+                        }
                     }
 
                     ul {
                         li {
                             padding-right: 6px;
+
+                            @media screen and (max-width: $md) {
+                                padding-right: 1px;
+                            }
 
                             i {
                                 color: #f95f5f;
