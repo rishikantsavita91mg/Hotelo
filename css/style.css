@@ -7,6 +7,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  vertical-align: top;
 }
 
 body {
@@ -14,7 +17,7 @@ body {
   line-height: normal;
   font-weight: 500;
   color: #000;
-  background: #fff;
+  background: white;
   text-decoration: none;
   padding-top: 125px;
   transition: all ease 0.5s;
@@ -34,6 +37,9 @@ body {
 }
 
 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -263,6 +269,11 @@ p {
   width: 100%;
   transition: all ease 0.5s;
 }
+@media screen and (max-width: 575px) {
+  #header .header-main .nav ul {
+    display: none;
+  }
+}
 #header .header-main .header-btn {
   width: auto;
 }
@@ -281,6 +292,11 @@ p {
   background: transparent;
   transition: all ease 0.5s;
   color: #000;
+}
+@media screen and (max-width: 575px) {
+  #header .header-main .header-btn .btn {
+    display: none;
+  }
 }
 #header .progressbar {
   width: 100%;
@@ -331,11 +347,21 @@ p {
     margin-bottom: 85px;
   }
 }
+@media screen and (max-width: 991px) {
+  #banner {
+    margin-bottom: 50px;
+  }
+}
 #banner .banner-main {
   width: 100%;
   background: #f4fbf8;
   border-radius: 40px 40px 0px 0px;
   position: relative;
+}
+@media screen and (max-width: 991px) {
+  #banner .banner-main {
+    gap: 40px;
+  }
 }
 #banner .banner-main .chack-out-main {
   position: absolute;
@@ -353,6 +379,12 @@ p {
     bottom: 60px;
   }
 }
+@media screen and (max-width: 991px) {
+  #banner .banner-main .chack-out-main {
+    width: 740px;
+    bottom: 15px;
+  }
+}
 #banner .banner-main .chack-out-main .chack-box {
   align-items: baseline;
   column-gap: 10px;
@@ -365,11 +397,24 @@ p {
   font-weight: 400;
   line-height: 24px;
 }
+@media screen and (max-width: 991px) {
+  #banner .banner-main .chack-out-main .chack-box .chack-text h5 {
+    line-height: 20px;
+    font-size: 18px;
+  }
+}
 #banner .banner-main .chack-out-main .chack-box .chack-text h6 {
   font-size: 14px;
   line-height: 16px;
   color: #555555;
   padding-top: 8px;
+}
+@media screen and (max-width: 991px) {
+  #banner .banner-main .chack-out-main .chack-box .chack-text h6 {
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 6px;
+  }
 }
 #banner .banner-main .chack-out-main .chack-btn {
   position: relative;
@@ -382,6 +427,11 @@ p {
 @media screen and (max-width: 1399px) {
   #banner .banner-main .chack-out-main .chack-btn {
     padding: 33px 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #banner .banner-main .chack-out-main .chack-btn {
+    padding: 25px 35px;
   }
 }
 #banner .banner-main .chack-out-main .chack-btn i {
@@ -408,6 +458,12 @@ p {
     padding: 60px 0 0 25px;
   }
 }
+@media screen and (max-width: 991px) {
+  #banner .banner-main .banner-content {
+    width: calc(50% - 20px);
+    padding: 20px 0 0 10px;
+  }
+}
 @media screen and (max-width: 1399px) {
   #banner .banner-main .banner-content h1 {
     font-size: 58px;
@@ -418,6 +474,12 @@ p {
   #banner .banner-main .banner-content h1 {
     font-size: 45px;
     line-height: 56px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #banner .banner-main .banner-content h1 {
+    font-size: 36px;
+    line-height: 46px;
   }
 }
 #banner .banner-main .banner-content p {
@@ -433,6 +495,13 @@ p {
     padding-top: 26px;
   }
 }
+@media screen and (max-width: 991px) {
+  #banner .banner-main .banner-content p {
+    font-size: 17px;
+    margin-bottom: 12px;
+    padding-top: 10px;
+  }
+}
 #banner .banner-main .banner-content ul {
   column-gap: 24px;
 }
@@ -445,12 +514,29 @@ p {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 991px) {
+  #banner .banner-main .banner-content ul li a {
+    width: 50px;
+    height: 50px;
+  }
+}
 #banner .banner-main .banner-content ul li a i {
   color: #24ab70;
   font-size: 20px;
 }
+@media screen and (max-width: 991px) {
+  #banner .banner-main .banner-content ul li h5 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
 #banner .banner-main .banner-img img {
   max-width: 640px;
+}
+@media screen and (max-width: 991px) {
+  #banner .banner-main .banner-img {
+    width: calc(50% - 20px);
+  }
 }
 
 #hotels {
@@ -468,6 +554,11 @@ p {
     margin-bottom: 90px;
   }
 }
+@media screen and (max-width: 991px) {
+  #hotels {
+    margin-bottom: 50px;
+  }
+}
 #hotels .hotels-main {
   width: 100%;
 }
@@ -477,6 +568,12 @@ p {
 }
 #hotels .hotels-main .hotels-blog .hotels-contant {
   width: 70%;
+}
+@media screen and (max-width: 991px) {
+  #hotels .hotels-main .hotels-blog .hotels-contant h2 {
+    font-size: 36px;
+    line-height: 52px;
+  }
 }
 #hotels .hotels-main .hotels-blog .hotels-contant p {
   max-width: 54%;
@@ -701,6 +798,11 @@ p {
     margin-bottom: 90px;
   }
 }
+@media screen and (max-width: 991px) {
+  #provide {
+    margin-bottom: 65px;
+  }
+}
 #provide .provide-main {
   width: 100%;
   column-gap: 24px;
@@ -729,6 +831,13 @@ p {
     line-height: 52px;
   }
 }
+@media screen and (max-width: 991px) {
+  #provide .provide-main .provide-content h2 {
+    font-size: 36px;
+    line-height: 52px;
+    padding-bottom: 12px;
+  }
+}
 #provide .provide-main .provide-content p {
   padding-bottom: 50px;
 }
@@ -753,6 +862,12 @@ p {
   background: transparent;
   color: #000;
 }
+@media screen and (max-width: 991px) {
+  #provide .provide-main .provide-content a {
+    padding: 10px 28px;
+    line-height: 22px;
+  }
+}
 #provide .provide-main .provide-box-blog {
   width: 67%;
   gap: 24px;
@@ -772,6 +887,11 @@ p {
 @media screen and (max-width: 1399px) {
   #provide .provide-main .provide-box-blog .provide-box {
     padding: 40px 15px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #provide .provide-main .provide-box-blog .provide-box {
+    padding: 30px 10px;
   }
 }
 #provide .provide-main .provide-box-blog .provide-box:hover {
@@ -806,6 +926,11 @@ p {
     margin-bottom: 85px;
   }
 }
+@media screen and (max-width: 991px) {
+  #discover {
+    margin-bottom: 65px;
+  }
+}
 #discover .discover-main {
   width: 100%;
   background: #f4fbf8;
@@ -823,14 +948,33 @@ p {
     padding: 30px 35px;
   }
 }
+@media screen and (max-width: 991px) {
+  #discover .discover-main .discover-content {
+    padding: 22px 28px;
+  }
+}
 #discover .discover-main .discover-content h2 {
   padding-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+  #discover .discover-main .discover-content h2 {
+    font-size: 28px;
+    line-height: 40px;
+    padding-bottom: 8px;
+  }
 }
 #discover .discover-main .discover-content p {
   margin-bottom: 24px;
 }
 #discover .discover-main .discover-content p:nth-last-child(2) {
   margin-bottom: 0;
+}
+@media screen and (max-width: 991px) {
+  #discover .discover-main .discover-content p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
 }
 #discover .discover-main .discover-content a {
   background: #24ab70;
@@ -847,6 +991,13 @@ p {
   #discover .discover-main .discover-content a {
     font-size: 15px;
     padding: 11px 24px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #discover .discover-main .discover-content a {
+    font-size: 14px;
+    padding: 9px 20px;
+    margin-top: 20px;
   }
 }
 #discover .discover-main .discover-content a:hover {
@@ -868,6 +1019,11 @@ p {
 @media screen and (max-width: 1199px) {
   #alexander {
     margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #alexander {
+    margin-bottom: 50px;
   }
 }
 #alexander .alexander-main {
@@ -971,11 +1127,22 @@ p {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 991px) {
+  #hyatt .hyatt-main {
+    width: auto;
+    column-gap: 20px;
+  }
+}
 #hyatt .hyatt-main .hyatt-img {
   width: 20%;
 }
 #hyatt .hyatt-main .hyatt-img img {
   max-width: 120px;
+}
+@media screen and (max-width: 991px) {
+  #hyatt .hyatt-main .hyatt-img {
+    border: 1px solid #ddd;
+  }
 }
 #hyatt .map {
   margin-top: 100px;
@@ -990,6 +1157,11 @@ p {
   width: 100%;
   height: 677px;
   border-radius: 16px;
+}
+@media screen and (max-width: 991px) {
+  #hyatt .map iframe {
+    height: 450px;
+  }
 }
 #hyatt .map .lucation-main {
   width: 100%;
@@ -1014,8 +1186,20 @@ p {
     padding: 29px;
   }
 }
+@media screen and (max-width: 991px) {
+  #hyatt .map .lucation-main {
+    max-width: 700px;
+    padding: 16px;
+    gap: 20px;
+  }
+}
 #hyatt .map .lucation-main .lucation-content {
   width: 50%;
+}
+@media screen and (max-width: 991px) {
+  #hyatt .map .lucation-main .lucation-content {
+    width: 60%;
+  }
 }
 #hyatt .map .lucation-main .lucation-content h2 {
   padding-bottom: 16px;
@@ -1026,10 +1210,23 @@ p {
     padding-bottom: 5px;
   }
 }
+@media screen and (max-width: 991px) {
+  #hyatt .map .lucation-main .lucation-content h2 {
+    font-size: 24px;
+    padding-bottom: 4px;
+    line-height: 36px;
+  }
+}
 @media screen and (max-width: 1199px) {
   #hyatt .map .lucation-main .lucation-content p {
     font-size: 15px;
     line-height: 25px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #hyatt .map .lucation-main .lucation-content p {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 #hyatt .map .lucation-main .lucation-form {
@@ -1054,6 +1251,11 @@ p {
     width: 385px;
   }
 }
+@media screen and (max-width: 991px) {
+  #hyatt .map .lucation-main .lucation-form form {
+    width: 300px;
+  }
+}
 #hyatt .map .lucation-main .lucation-form form input {
   width: 75%;
   border: none;
@@ -1072,6 +1274,11 @@ p {
     line-height: 20px;
   }
 }
+@media screen and (max-width: 991px) {
+  #hyatt .map .lucation-main .lucation-form form input {
+    padding: 12px 0px 12px 22px;
+  }
+}
 #hyatt .map .lucation-main .lucation-form form button {
   font-size: 16px;
   font-weight: 600;
@@ -1085,6 +1292,11 @@ p {
   #hyatt .map .lucation-main .lucation-form form button {
     font-size: 14px;
     padding: 12px 29px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #hyatt .map .lucation-main .lucation-form form button {
+    padding: 12px 24px;
   }
 }
 

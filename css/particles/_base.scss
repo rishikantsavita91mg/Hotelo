@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    vertical-align: top;
 }
 body{
     font-family: $font-family;
@@ -16,8 +19,6 @@ body{
     @media screen and (max-width:1399px) {
       padding-top: 100px;
     }
-
-
 }
 .container{
     width: 100%;

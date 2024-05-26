@@ -3,13 +3,15 @@
     background: white;
     margin-top: 120px;
     margin-bottom: 63px;
+
     @media screen and (max-width:1399px) {
-       margin-top: 0;
-       margin-bottom: 45px;
+        margin-top: 0;
+        margin-bottom: 45px;
     }
+
     @media screen and (max-width:1199px) {
-   margin-bottom: 35px;
-      }
+        margin-bottom: 35px;
+    }
 
     .footer-main {
         width: 100%;
@@ -18,9 +20,10 @@
 
         .footer-content {
             width: 25%;
+
             @media screen and (max-width:1199px) {
-            width: 33.33%;
-              }
+                width: 33.33%;
+            }
 
             p {
                 max-width: 91%;
@@ -36,9 +39,10 @@
 
         .footer-text {
             width: 20%;
+
             @media screen and (max-width:1199px) {
-               width: 33.33%;
-              }
+                width: 33.33%;
+            }
 
             h4 {
                 line-height: 32px;
@@ -46,9 +50,10 @@
                 padding-bottom: 32px;
                 max-width: 60%;
                 margin: 0 auto;
+
                 @media screen and (max-width:1199px) {
-                  padding-bottom: 18px;
-                  }
+                    padding-bottom: 18px;
+                }
             }
 
             ul {
@@ -57,9 +62,10 @@
 
                 li {
                     padding-bottom: 16px;
+
                     @media screen and (max-width:1199px) {
-                       padding-bottom: 12px;
-                      }
+                        padding-bottom: 12px;
+                    }
 
                     a {
                         color: $black;
@@ -93,8 +99,8 @@
     }
 }
 
-/*-------------back-to-top---------------*/ 
-.back-to-top{
+/*-------------back-to-top---------------*/
+.back-to-top {
     width: 50px;
     height: 50px;
     position: fixed;
@@ -112,12 +118,14 @@
     visibility: hidden;
     transition: all ease 0.5s;
 
-    &:hover, &:focus{
-        background:$primary;
+    &:hover,
+    &:focus {
+        background: $primary;
         color: $white;
         transition: all ease 0.5s;
     }
-    &.show{
+
+    &.show {
         visibility: visible;
         opacity: 1;
         transition: all ease 0.5s;

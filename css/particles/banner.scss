@@ -2,18 +2,28 @@
     width: 100%;
     background: $white;
     margin-bottom: 120px;
+
     @media screen and (max-width:1399px) {
-       margin-bottom: 100px;
+        margin-bottom: 100px;
     }
-    
+
     @media screen and (max-width:1199px) {
-      margin-bottom: 85px;
-     }
+        margin-bottom: 85px;
+    }
+
+    @media screen and (max-width:$lg) {
+        margin-bottom: 50px;                
+    }
+
     .banner-main {
         width: 100%;
         background: $secondary;
         border-radius: 40px 40px 0px 0px;
         position: relative;
+
+        @media screen and (max-width:$lg) {
+            gap: 40px;
+        }
 
         .chack-out-main {
             position: absolute;
@@ -25,14 +35,18 @@
             border-radius: 280px;
             background: $white;
 
-            
+
             @media screen and (max-width:1199px) {
                 width: 900px;
                 bottom: 60px;
-             }
+            }
 
-             
-          
+            @media screen and (max-width:$lg) {
+                width: 740px;
+                bottom: 15px;
+            }
+
+
             .chack-box {
                 align-items: baseline;
                 column-gap: 10px;
@@ -48,13 +62,25 @@
                     h5 {
                         font-weight: $font-reguler;
                         line-height: 24px;
+
+                        @media screen and (max-width:$lg) {
+                            line-height: 20px;
+                            font-size: 18px;
+                        }
                     }
+
 
                     h6 {
                         font-size: 14px;
                         line-height: 16px;
                         color: $gray;
                         padding-top: 8px;
+
+                        @media screen and (max-width:$lg) {
+                            font-size: 13px;
+                            line-height: 15px;
+                            padding-top: 6px;
+                        }
                     }
                 }
 
@@ -70,6 +96,10 @@
 
                 @media screen and (max-width:1399px) {
                     padding: 33px 40px;
+                }
+
+                @media screen and (max-width:$lg) {
+                    padding: 25px 35px;
                 }
 
 
@@ -99,10 +129,15 @@
             @media screen and (max-width:1399px) {
                 padding: 65px 0 0 40px;
             }
-            
+
             @media screen and (max-width:1199px) {
-              padding: 60px 0 0 25px;
-             }
+                padding: 60px 0 0 25px;
+            }
+
+            @media screen and (max-width:$lg) {
+                width: calc(50% - 20px);
+                padding: 20px 0 0 10px;
+            }
 
             h1 {
 
@@ -110,11 +145,16 @@
                     font-size: 58px;
                     line-height: 70px;
                 }
-                
-            @media screen and (max-width:1199px) {
-                font-size: 45px;
-                line-height: 56px;
-             }
+
+                @media screen and (max-width:1199px) {
+                    font-size: 45px;
+                    line-height: 56px;
+                }
+
+                @media screen and (max-width:$lg) {
+                    font-size: 36px;
+                    line-height: 46px;
+                }
 
             }
 
@@ -129,6 +169,12 @@
                     font-size: 19px;
                     margin-bottom: 30px;
                     padding-top: 26px;
+                }
+
+                @media screen and (max-width:$lg) {
+                    font-size: 17px;
+                    margin-bottom: 12px;
+                    padding-top: 10px;
                 }
 
             }
@@ -146,9 +192,21 @@
                         justify-content: center;
                         align-items: center;
 
+                        @media screen and (max-width:$lg) {
+                            width: 50px;
+                            height: 50px;
+                        }
+
                         i {
                             color: $primary;
                             font-size: 20px;
+                        }
+                    }
+
+                    h5 {
+                        @media screen and (max-width:$lg) {
+                            font-size: 18px;
+                            font-weight: 500;
                         }
                     }
                 }
@@ -158,6 +216,10 @@
         .banner-img {
             img {
                 max-width: 640px;
+            }
+
+            @media screen and (max-width:$lg) {
+                width: calc(50% - 20px);
             }
         }
     }

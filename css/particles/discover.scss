@@ -11,6 +11,10 @@
         margin-bottom: 85px;
     }
 
+    @media screen and (max-width:$lg) {
+        margin-bottom: 65px;
+    }
+
     .discover-main {
         width: 100%;
         background: $secondary;
@@ -28,9 +32,18 @@
                 padding: 30px 35px;
             }
 
+            @media screen and (max-width:$lg) {
+                padding: 22px 28px;
+            }
+
             h2 {
                 padding-bottom: 20px;
 
+                @media screen and (max-width:$lg) {
+                    font-size: 28px;
+                    line-height: 40px;
+                    padding-bottom: 8px;
+                }
             }
 
             p {
@@ -38,6 +51,12 @@
 
                 &:nth-last-child(2) {
                     margin-bottom: 0;
+                }
+
+                @media screen and (max-width:$lg) {
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin-bottom: 8px;
                 }
             }
 
@@ -51,10 +70,17 @@
                 margin-top: 50px;
                 transition: all ease 0.5s;
                 border: 2px solid $primary;
+
                 @media screen and (max-width:1199px) {
-                  font-size: 15px;
-                  padding: 11px 24px;
-                  }
+                    font-size: 15px;
+                    padding: 11px 24px;
+                }
+
+                @media screen and (max-width:$lg) {
+                    font-size: 14px;
+                    padding: 9px 20px;
+                    margin-top: 20px;
+                }
 
                 &:hover {
                     transition: all ease 0.5s;
